@@ -1,0 +1,65 @@
+@mixin text-style-12() {
+  font-size: text-style-12();
+  line-height: text-style-12();
+  letter-spacing: text-style-12();
+}
+
+@mixin text-style-13() {
+  font-size: text-style-13();
+  line-height: text-style-13();
+  letter-spacing: text-style-13();
+}
+
+@mixin text-style-14() {
+  font-size: text-style-14();
+  line-height: text-style-14();
+  letter-spacing: text-style-14();
+}
+
+@mixin text-style-16() {
+  font-size: text-style-16();
+  line-height: text-style-16();
+  letter-spacing: text-style-16();
+}
+
+@mixin text-style-18() {
+  font-size: text-style-18();
+  line-height: text-style-18();
+  letter-spacing: text-style-18();
+}
+
+@mixin text-style-24() {
+  font-size: text-style-24();
+  line-height: text-style-24();
+  letter-spacing: text-style-24();
+}
+
+@mixin text-style($size, $color: false) {
+  @if ($size == 12) {
+    @include text-style-12;
+  }
+
+  @if ($size == 13) {
+    @include text-style-13;
+  }
+
+  @if ($size == 14) {
+    @include text-style-14;
+  }
+
+  @if ($size == 16) {
+    @include text-style-16;
+  }
+
+  @if ($size == 18) {
+    @include text-style-18;
+  }
+
+  @if ($size == 24) {
+    @include text-style-24;
+  }
+
+  @if (type-of($color) == color) {
+    color: $color;
+  }
+}
